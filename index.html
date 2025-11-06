@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar bg-primary navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <!-- brand name -->
+        <!-- <a class="navbar-brand text-dark" href="#">PORTFOLIO</a> -->
+
+        <!-- Toggler button - triggers OFFCANVAS on small screens -->
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Normal Menu (Desktop) -->
+        <div class="collapse navbar-collapse d-none d-lg-block">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link text-dark">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link text-dark">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link text-dark">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link text-dark">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Offcanvas Menu (Mobile) -->
+        <div
+          class="offcanvas offcanvas-end d-lg-none"
+          tabindex="-1"
+          id="offcanvasNavbar"
+        >
+          <div class="offcanvas-header">
+            <h5>Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+            ></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#skills" class="nav-link">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a href="#projects" class="nav-link">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- carousel -->
+    <!-- <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="static/images/flower.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="static/images/dive.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="static/images/rain.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> -->
+
+    <!-- about -->
+    <div id="about" class="container my-5">
+      <h2 class="text-center text-primary">about me</h2>
+      <p class="text-center">
+        I’m currently pursuing a BSc in Software Development, where I’ve built
+        solutions that merge technology and real-world impact — from healthcare
+        systems to mobile applications. My interests lie at the intersection of
+        web development, AI, and cybersecurity, where innovation meets
+        reliability. I’m driven by the challenge of building software that is
+        efficient, human-centered, and globally relevant.
+      </p>
+    </div>
+
+    <!-- skills -->
+    <div id="skills" class="container my-5">
+      <h2 class="text-center text-primary">my skills</h2>
+      <p class="text-center">
+        I'm a software developer passionate about creating seamless, accessible,
+        and scalable user experiences. My expertise spans JavaScript, React,
+        HTML, CSS, and Node.js — tools I use to design dynamic web interfaces
+        that combine performance with usability. I enjoy bridging design and
+        engineering to bring ideas to life with precision and purpose.
+      </p>
+      <div class="row">
+        <!-- 1st column -->
+        <!-- div class="card shadow h-100" -->
+        <div class="col-md-3">
+          <!-- card -->
+          <div class="card h-100 shadow" style="width: 15rem">
+            <!-- <img
+              src="static/images/food-app.png"
+              class="card-img-top"
+              alt="..."
+            /> -->
+            <div class="card-body">
+              <h5 class="card-title">Languages</h5>
+              <p class="card-text">
+                Java, Python, C/C++/C#, SQL, JavaScript/TypeScript, HTML/CSS
+              </p>
+              <!-- <a href="#" class="btn btn-primary">learn more</a> -->
+              <!-- <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#mymodal"
+              >
+                learn more
+              </button> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 2nd column -->
+        <div class="col-md-3">
+          <!-- card -->
+          <div class="card h-100 shadow" style="width: 15rem">
+            <!-- <img
+              src="static/images/medical-app.png"
+              class="card-img-top"
+              alt="..."
+            /> -->
+            <div class="card-body">
+              <h5 class="card-title">Frameworks</h5>
+              <p class="card-text">React, Node.js, Flask, Bootstrap</p>
+              <!-- <a href="#" class="btn btn-primary">learn more</a> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 3rd column -->
+        <div class="col-md-3">
+          <!-- card -->
+          <div class="card h-100 shadow" style="width: 15rem">
+            <!-- <img
+              src="static/images/game-app.png"
+              class="card-img-top"
+              alt="..."
+            /> -->
+            <div class="card-body">
+              <h5 class="card-title">Developer Tools</h5>
+              <p class="card-text">
+                VS Code, Visual Studio, PyCharm, Jupyter Notebook, IntelliJ,
+                NetBeans
+              </p>
+              <!-- <a href="#" class="btn btn-primary">learn more</a> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 4th column -->
+        <div class="col-md-3">
+          <!-- card -->
+          <div class="card h-100 shadow" style="width: 15rem">
+            <!-- <img
+              src="static/images/game-app.png"
+              class="card-img-top"
+              alt="..."
+            /> -->
+            <div class="card-body">
+              <h5 class="card-title">Libraries</h5>
+              <p class="card-text">Pandas, NumPy, Matplotlib</p>
+              <!-- <a href="#" class="btn btn-primary">learn more</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- projects -->
+    <div id="projects" class="container my-5">
+      <h2 class="text-center text-primary">my projects</h2>
+      <p class="text-center">
+        Recent projects include a Hospital Management System that streamlines
+        appointment scheduling and patient data management, and a Food Delivery
+        System that enhances local business logistics. I’ve also developed
+        mobile apps and Unity-based games that showcase my creativity and
+        full-stack versatility. Each project reflects my focus on usability,
+        performance, and meaningful impact.
+      </p>
+      <div class="row">
+        <!-- 1st column -->
+        <!-- div class="card" shadow h-100 -->
+        <div class="col-md-4">
+          <!-- card -->
+          <div class="card h-100 shadow" style="width: 20rem">
+            <img
+              src="static/images/food-app.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Food Delivery System</h5>
+              <p class="card-text">
+                Developed a full-stack application with secure authentication
+                and order management.
+              </p>
+              <!-- <a href="#" class="btn btn-primary">learn more</a> -->
+              <!-- <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#mymodal"
+              >
+                learn more
+              </button> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 2nd column -->
+        <div class="col-md-4">
+          <!-- card -->
+          <div class="card h-100 shadow" style="width: 20rem">
+            <img
+              src="static/images/medical-app.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Telehealth System</h5>
+              <p class="card-text">
+                Designed and implemented an appointment scheduling and patient
+                management system.
+              </p>
+              <!-- <a href="#" class="btn btn-primary">learn more</a> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 3rd column -->
+
+        <!-- <div class="col-md-4"> -->
+        <!-- card -->
+        <!-- <div class="card h-100 shadow" style="width: 18rem">
+            <img
+              src="static/images/flower.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">machine learning</h5>
+              <p class="card-text">
+                Built predictive models on real world datasets. Applied data
+                cleaning, clustering, classification, regression, and ensemble
+                techniques. Improved accuracy of models and visualized insights
+                for decision-making
+              </p>
+              <a href="#" class="btn btn-primary">learn more</a>
+            </div>
+          </div> -->
+        <!-- </div> -->
+
+        <!-- 4th column -->
+        <div class="col-md-4">
+          <!-- card -->
+          <div class="card h-100 shadow" style="width: 20rem">
+            <img
+              src="static/images/game-app.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mobile Game Development</h5>
+              <p class="card-text">
+                Created an interactive mobile game in Unity to explore user
+                engagement and design principles
+              </p>
+              <!-- <a href="#" class="btn btn-primary">learn more</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal -->
+    <!-- <div class="modal" tabindex="-1" id="mymodal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Software Development</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Learn to create websites using html css and bootstrap</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- contact -->
+    <div id="contact" class="container my-5">
+      <h2 class="text-center text-primary">contact me</h2>
+      <p class="text-center">
+        I’m always open to collaborating on innovative projects, discussing new
+        technologies, or contributing to teams shaping the future of software.
+        Let’s connect if you’re looking for a dedicated developer eager to
+        learn, grow, and build impactful digital experiences. You can reach me
+        through the form below or via my social links.
+      </p>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form action="">
+            <div class="mb-3">
+              <label for="fname" class="form-label">Full name</label>
+              <input type="text" id="fname" name="fname" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" id="email" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label for="msg" class="form-label">Message</label>
+              <textarea id="msg" class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="static/js/bootstrap.min.js"></script>
+  </body>
+</html>
